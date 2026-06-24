@@ -1,4 +1,4 @@
-# Cognify Web Projects
+# Web Projects
 
 A collection of web development projects demonstrating responsive design, modern UI implementation, interactive features, and frontend development skills using HTML, CSS, and JavaScript.
 
