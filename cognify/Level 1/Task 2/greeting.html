@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting</title>
+</head>
+<body>
+    <h2>Click the button to get a greeting</h2>
+    <button id="greetBtn">Greet Me</button>
+
+    <script>
+        function greeting(){
+            let time = new Date().getHours();
+            if(time < 12){
+                alert("Good Morning!");
+            } else if(time < 18){
+                alert("Good Afternoon!");
+            } else {
+                alert("Good Evening!");
+            }
+        }
+
+        document.getElementById("greetBtn").onclick = greeting;
+    </script>
+</body>
+</html>

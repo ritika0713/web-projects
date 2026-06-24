@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Mobile Nav</title>
+  <style>
+    body{margin:0;font-family:Arial}
+    nav{background:purple;padding:10px;text-align:center}
+    nav a{color:#fff;text-decoration:none;margin:10px;display:inline-block}
+    .menu{display:none;font-size:22px;color:#fff;cursor:pointer}
+    #chk{display:none}
+    @media(max-width:1000px){
+      .links{display:none}
+      .menu{display:inline-block}
+      #chk:checked ~ .links{display:block}
+      .links a{display:block;margin:10px 0}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <label for="chk" class="menu">&#9776;</label>
+    <input type="checkbox" id="chk">
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+</body>
+</html>
